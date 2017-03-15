@@ -7,6 +7,23 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiZWxyb3Blcm8iLCJhIjoiY2owYXc4b201MDAwbDMzbXg5N3o0ZzY2OCJ9.TrN--dVPSHx-m8li-CIwvg'
 }).addTo(theMap);
 
+// Birthplace
+L.marker([39.063871, -108.550649])
+  .addTo(theMap)
+  .bindPopup("I was born in Grand Junction, Colorado");
+
+// Bay Area region
+var circle = L.circle([38.177751,-121.666203], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 100000
+}).addTo(theMap);
+
+L.marker([38.662609, -121.204137])
+  .addTo(theMap)
+  .bindPopup("<b>-1999</b><br/>I grew up just outside Sacramento, CA");
+
 // Stanford
 L.marker([37.430047, -122.173362])
   .addTo(theMap)
@@ -17,16 +34,37 @@ L.marker([37.78956, -122.40036])
   .addTo(theMap)
   .bindPopup("<b>1999-2001</b><br/>I worked for a startup called 1stUp.com which was acquired by CMGI.<br/><b>2002<br/>I then started a spinoff called Merado Software, which we sold to PeoplePC in 2002");
 
+// Central America region
+var circle = L.circle([14.517205, -88.992796], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 300000
+}).addTo(theMap);
+
 // Peace Corps
 L.marker([13.882247, -86.93612])
   .addTo(theMap)
   .bindPopup("<b>2002-2003</b><br/>In 2002 I joined the Peace Corps and left for a Honduras. I lived in a small town called Güinope - the orange capital of Honduras apparently.");
+
+// Guatemala
+L.marker([14.852071, -91.530547])
+  .addTo(theMap)
+  .bindPopup("Over the years I've spent time in Guatemala, accompanying Emily on research trips and working remotely.");
+
 
 // Washington State Democrats
 L.marker([47.650544, -122.3493])
   .addTo(theMap)
   .bindPopup("<b>2003-2004</b><br/>After returning from the Peace Corps, I moved to Seattle with my now wife Emily. There I worked for the Washington State Democrats during the 2004 primary season.");
 
+// NYC Region
+var circle = L.circle([40.751906, -73.97727], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 5000
+}).addTo(theMap);
 
 // Brooklyn
 L.marker([40.720852, -73.960833])
@@ -37,6 +75,16 @@ L.marker([40.720852, -73.960833])
 L.marker([40.751906, -73.97727])
   .addTo(theMap)
   .bindPopup("<b>2004-2010</b><br/>In New York, I worked for Portware. My office was across the street from Grand Central Station.");
+
+
+// Amsterdam region
+var circle = L.circle([52.358318, 4.861018], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 5000
+}).addTo(theMap);
+
 
 // Amsterdam / Spreecast
 L.marker([52.358318, 4.861018])
