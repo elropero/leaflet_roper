@@ -1,8 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #header
+    h1= title
+    h3 I made a map so you can learn more about me.
+
   include partials/map
 
   script(src='/js/map.js')
